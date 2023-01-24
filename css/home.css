@@ -289,15 +289,16 @@
 }
 .content .main-part ul li .home-pic .post-top {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
     font-size: 12px;
     color: var(--text-keep);
     padding: 2px 8px;
     background: var(--theme-sub);
     background: linear-gradient(120deg, var(--theme), var(--theme-sub));
     animation: hueRotate 3s infinite alternate;
-    border-radius: var(--radius) 0 var(--radius) 0;
+    border-radius: var(--radius-sub);
+    box-shadow: var(--box);
     z-index: 2;
 }
 .content .main-part ul li .home-pic > a {
@@ -475,15 +476,16 @@
 }
 .home-2 .home-2-mian ul li .home-2-pic .post-top {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
     font-size: 12px;
     color: var(--text-keep);
     padding: 2px 8px;
     background: var(--theme-sub);
     background: linear-gradient(120deg, var(--theme), var(--theme-sub));
     animation: hueRotate 3s infinite alternate;
-    border-radius: var(--radius) 0 var(--radius) 0;
+    border-radius: var(--radius-sub);
+    box-shadow: var(--box);
     z-index: 2;
 }
 .home-2 .home-2-mian ul li .home-2-pic a {

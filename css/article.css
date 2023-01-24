@@ -21,7 +21,7 @@
 }
 .single-banner .single-cate .single-cate-box span {
     font-size: 22px;
-    color: var(--bgc-blur);
+    color: var(--bgc-sub);
     vertical-align: middle;
 }
 .single-banner .single-cate .single-cate-box a {
@@ -336,6 +336,10 @@
 .single-main .left .post-content .post-tip {
     display: none;
 }
+.single-main .left .post-content .the-tag {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
 .single-main .left .post-content .the-tag span a {
     line-height: 30px;
     font-size: 13px;
@@ -348,8 +352,9 @@
     transition: var(--tr1);
 }
 .single-main .left .post-content .the-tag span a::before {
-    content: '#';
-    left: 0;
+    content: '\e74c';
+    font-family: 'iconfont';
+    font-size: 14px;
 }
 .single-main .left .post-content .the-tag span a:hover {
     background: linear-gradient(120deg, var(--theme), var(--theme-sub));
@@ -364,7 +369,7 @@
     color: var(--text-info);
     font-size: 14px;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .single-main .left .post-content .the-end i {
     display: block;
@@ -491,7 +496,6 @@
 }
 
 
-.post-content .post-tag-title,
 .post-comments .comment-reply-title,
 .post-comments .post-comments-title,
 .post-context .post-context_text {
@@ -506,13 +510,12 @@
     align-items: center;
     justify-content: left;
     background: var(--theme-2);
-    background: linear-gradient(90deg,var(--theme-2) 0%,var(--bgc-0) 100%);
-    animation: hueRotate 3s infinite alternate;
+    background: linear-gradient(120deg,var(--theme-2) 0%,var(--bgc-0) 100%);
     border-radius: var(--radius);
     transition: var(--tr3);
 }
 
-.post-content .post-tag-title::before,
+
 .post-context .post-context_text::before,
 .post-comments .comment-reply-title::before,
 .post-comments .post-comments-title::before {
@@ -521,12 +524,7 @@
     font-size: 26px;
     font-weight: 400;
 }
-.post-content .post-tag-title {
-    margin-top: 60px;
-}
-.post-content .post-tag-title::before {
-    content: '\e74c';
-}
+
 .post-context .post-context_text::before {
     content: '\e751';
 }
@@ -983,6 +981,7 @@
     color: var(--text-keep);
     background: var(--theme-sub);
     background: linear-gradient(120deg, var(--theme), var(--theme-sub)); 
+    animation: hueRotate 3s infinite alternate;
     padding: 2px 8px;
     border-radius: var(--radius-sub);
     transition: var(--tr3);
@@ -1147,7 +1146,10 @@
     .post-comments .comment-body {
         padding-top: 15px;
     }
-    .post-content .post-tag-title,
+
+    .single-main .left .post-content .the-tag {
+        margin-top: 20px;  
+    }
     .post-context .post-context_text,
     .post-comments .comment-reply-title,
     .post-comments .post-comments-title {
@@ -1156,7 +1158,6 @@
         margin-bottom: 20px;
         padding: 6px 8px;
     }
-    .post-content .post-tag-title::before,
     .post-context .post-context_text::before,
     .post-comments .comment-reply-title::before,
     .post-comments .post-comments-title::before {

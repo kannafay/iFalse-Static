@@ -107,7 +107,8 @@ $(change_comment_edit).each(function(i) {
 // 文章、页面评论为0时隐藏
 const comment_number = $('.post-comments .post-comments-title a').text();
 if(comment_number == "沙发") {
-    $('.post-comments-title').text('还没有人评论哦！')
+    $('.post-comments-title').text('还没有人评论哦！');
+    $('.post-comments-title').css('margin-bottom','0');
 };
 
 

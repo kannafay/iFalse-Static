@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transition: var(--tr3);
 }
 .author-info-box:hover .author-info .post-author-logo {
@@ -49,13 +49,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
-.author-info-box .author-info .post-author-description::before {
-    content: '';
-    font-family: 'iconfont';
-    font-size: 18px;
+.author-info-box .author-info .post-author-new {
+    margin-top: 20px;
 }
+.author-info-box .author-info .post-author-new li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-info);
+    margin-top: 5px;
+    transition: var(--tr3);
+}
+.author-info-box .author-info .post-author-new li::before {
+    content: '✧ ';
+    color: var(--theme);
+}
+.author-info-box .author-info .post-author-new li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: var(--text-info);
+    transition: var(--tr3);
+}
+.author-info-box .author-info .post-author-new li:hover,
+.author-info-box .author-info .post-author-new li a:hover {
+    color: var(--theme);
+}
+
 #primary-sidebar > li {
     width: 100%;
     height: auto;

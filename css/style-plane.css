@@ -161,6 +161,9 @@ body {
 .single-banner .single-title h1 {
     font-size: 28px;
 }
+.say-top .single-banner .single-title h1 {
+    margin-top: 0;
+}
 .single-main .left {
     padding-bottom: 20px;
 }
@@ -174,6 +177,7 @@ body {
     background-color: var(--bgc);
     border-radius: var(--radius);
     box-shadow: var(--box-p);
+    border-bottom: 0;
     transition: var(--tr3);
 }
 .single-main .left .post-content > *:last-child {
@@ -186,6 +190,7 @@ body {
 }
 .single-main .left .post-content .post-copyright {
     border: 0;
+    margin-top: 15px;
 }
 .single-main .left .post-content .post-copyright:hover {
     border: 0;
@@ -245,9 +250,7 @@ body {
     background-color: var(--body);
     transition: var(--tr3);
 }
-.post-content .post-tag-title {
-    display: none;
-}
+
 .single-main .left .post-content .the-end {
     margin-top: 20px;
     margin-bottom: 15px !important;
@@ -289,6 +292,8 @@ body {
 .login-page .login-msg .form-item input:focus {
     border: 0;
 }
+
+/* say.css */
 
 @media screen and (max-width: 960px) {
     .searchform-mb input {
@@ -390,6 +395,9 @@ body {
     .post-comments .post-comments-title {
         margin-top: 20px;
     }
+    .single-main .left .post-content .post-copyright {
+        margin-top: 10px;
+    }
 
     /* 页面 */
     .page-main {
@@ -399,13 +407,13 @@ body {
         margin-top: 80px;
     }
     .page-banner {
-        padding: 10px;
+        padding: 15px;
     }
     .page-banner .page-title h1 {
         font-size: 20px;
     }
     .page-banner .page-detail .author {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
     /* right-botton button */

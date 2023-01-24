@@ -89,8 +89,8 @@
     width: 100%;
     position: relative;
     padding: 0 20px;
-    border-bottom: 1px solid var(--border);
     padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
     margin-bottom: 20px;
     transition: var(--tr3);
 }
@@ -144,6 +144,7 @@
     color: var(--text-keep);
     background: var(--theme-sub);
     background: linear-gradient(120deg, var(--theme), var(--theme-sub));
+    animation: hueRotate 3s infinite alternate;
     padding: 2px 6px;
     border-radius: var(--radius-sub);
 }
@@ -159,6 +160,61 @@
 .say-content .say-post-item .say-post-content #article-toc-mb,
 .say-content .say-post-item .say-post-content #article-toc {
     display: none;
+}
+
+/* .say-content .say-post-item .say-post-comments {
+    display: flex;
+    justify-content: center;
+    width: 102px;
+    height: 23px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: -2px;
+    padding-top: 1px;
+    background-color: var(--border);
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    border-radius: var(--radius);
+    transition: var(--tr3);
+}
+.say-content .say-post-item .say-post-comments a {
+    display: inline-block;
+    width: 100px;
+    height: 22px;
+    line-height: 26px;
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--bgc);
+    color: var(--text-info);
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
+    transition: var(--tr3);
+}
+.say-content .say-post-item .say-post-comments a:hover {
+    color: var(--theme);
+} */
+
+.say-content .say-post-item .say-post-comments {
+    margin-top: 40px;
+    transition: var(--tr3);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.say-content .say-post-item .say-post-comments::before {
+    content: '\e7b2';
+    font-family: 'iconfont';
+    font-size: 16px;
+    color: var(--text-info);
+}
+.say-content .say-post-item .say-post-comments a {
+    font-size: 14px;
+    color: var(--text-info);
+    transition: var(--tr3);
+}
+.say-content .say-post-item .say-post-comments a:hover {
+    color: var(--theme);
 }
 
 /* pageNav */
@@ -356,6 +412,12 @@
 }
 .say-post-content .gallery .gallery-item img:hover {
     box-shadow: var(--box-l);
+}
+
+
+/* 说说详情页 */
+.say-top .single-banner .single-title h1 {
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 700px) {

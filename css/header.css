@@ -121,11 +121,11 @@
     border-radius: var(--radius);
     box-shadow: var(--box);
     padding: 5px 8px;
-    transform: translate(-10px,-10px) scale(.9);
+    transform: translate(-5px,-5px);
     transition: var(--tr2);
 }
 .nav-menu .menu-item-has-children:hover > .sub-menu {
-    transform: translate(0,0) scale(1);
+    transform: translate(0,0);
     visibility: visible;
     opacity: 1;
 }
@@ -153,7 +153,7 @@
 .nav-menu .menu-item-has-children .sub-menu li > .sub-menu {
     width: 100%;
     position: absolute;
-    transform: translate(-10px, -19px) scale(.95);
+    transform: translate(-5px, -14px);
     margin-left: calc(100% - 16px);
     margin-top: -28px;
     transition: var(--tr2);
@@ -163,7 +163,7 @@
 }
 .nav-menu .menu-item-has-children .sub-menu li:hover > .sub-menu,
 .nav-menu .menu-item-has-children .sub-menu li .sub-menu li:hover .sub-menu {
-    transform: translate(0,-9px) scale(1);
+    transform: translate(0,-9px);
     visibility: visible;
     opacity: 1;
 }
@@ -171,8 +171,8 @@
     display: none;
 } 
 
-.nav-menu > .menu-item-has-children > .sub-menu .current-menu-item a,
-.nav-menu > .menu-item-has-children > .sub-menu .current-menu-item a:hover {
+.nav-menu > .menu-item-has-children > .sub-menu .current-menu-item > a,
+.nav-menu > .menu-item-has-children > .sub-menu .current-menu-item > a:hover {
     background: linear-gradient(120deg,var(--theme),var(--theme-sub));
     animation: hueRotate 3s infinite alternate;
     color: var(--text-keep);
